@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+  font-size: 16px;
+  text-decoration: none;
+  list-style: none;
+  --text-color: rgba(34, 32, 32, 0.87);
+  --primary-color:#eee;
+  --primary-font:Montserrat;
+  --form-primary-color: rgb(235, 229, 229);
+  --form-bg: rgb(47, 47, 47);
+
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: white;
+  font-family: Montserrat;
+}
+
+::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+::-webkit-scrollbar-track {
+  color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  color: black;
+}
+
+nav {
+  display: flex;
+  background-color: var(--primary-color);
+  height: 70px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  left: 15px;
+}
+
+nav ul li {
+  list-style: none;
+  padding: 0 20px;
+  line-height: 70px;
+  align-content: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgba(34, 32, 32, 0.87);
+  font-family: Montserrat;
+  font-size: 1.25rem;
+  transform: all 0.1;
+  transition: all 0.2s;
+}
+
+nav ul li a:hover {
+  font-weight: bold;
+  color: rgba(34, 32, 32, 1);
+}  
+
+i{
+  color:rgba(34, 32, 32, 1) ;
+}
+
+.head-text {
+  color: white;
+  font-weight: 900;
+  text-shadow: 2px 2px 5px black;
+  font-size: 5rem;
+  opacity: 0.5;
+  transition: all 0.5s;
+}
+
+.web-serv {
+  line-height: 70px;
+  text-decoration: none;
+  font-family: montserrat;
+  position: relative;
+  right: 20px;
+  color: rgba(34, 32, 32, 0.87);
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.8rem;
+  position: relative;
+  line-height: 70px;
+  padding-right: 30px;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.banner-text h1 {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 3rem;
+}
+
+.banner-img {
+  background-image: url(../img/bg2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 70px);
+  filter: brightness(0.7);
+}
+
+.banner-text {
+  position: absolute;
+  top: 30%;
+  height: 100%;
+  width: 100%;
+}
+
+svg {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.about {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.about p, h1 {
+  padding: 0 10px 20px 10px;
+}
+
+.about p {
+  line-height: 1.5rem;
+  text-transform: capitalize;
+}
+
+.sections {
+  padding: 50px 0 60px 0;
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.about-us {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+.photos {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.photos img {
+  width: 98%;
+}
+
+.left, .right {
+  flex: 1;
+}
+
+.mobile-text {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-size: 2rem;
+  color: var(--primary-color);
+  border-bottom: var(--primary-color) solid 3px;
+  text-transform: capitalize;
+  text-shadow: 2px 2px 5px black;
+}
+
+.logo-text {
+  position: absolute;
+  top: 39.5%;
+  left: 20px;
+  font-size: 2rem;
+  color: var(--primary-color);
+  border-bottom: var(--primary-color) solid 3px;
+  text-transform: capitalize;
+  text-shadow: 2px 2px 5px black;
+}
+
+.web-dis-text {
+  position: absolute;
+  top: 10px;
+  margin-left: 20px;
+  font-size: 2rem;
+  color: var(--primary-color);
+  border-bottom: var(--primary-color) solid 3px;
+  text-transform: capitalize;
+  text-shadow: 2px 2px 5px black;
+}
+
+.web-div-text {
+  position: absolute;
+  top: 63%;
+  margin-left: 20px;
+  font-size: 2rem;
+  color: var(--primary-color);
+  border-bottom: var(--primary-color) solid 3px;
+  text-transform: capitalize;
+  text-shadow: 2px 2px 5px black;
+}
+
+.photo-end-text {
+  float: right;
+  padding-right: 100px;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.contact-us-section {
+  background-color: var(--form-bg);
+  padding: 130px;
+}
+
+.contact-us-section form input {
+  display: block;
+  border: var(--form-primary-color) solid 3px;
+  background-color: rgb(47, 47, 47);
+  color: var(--form-primary-color);
+  font-size: 2rem;
+  margin: 25px 0;
+  width: 60%;
+}
+
+.contact-us-section form input ::placeholder {
+  color: var(--form-primary-color);
+}
+
+.contact-us-section form p {
+  color: var(--form-primary-color);
+  font-size: 3rem;
+}
+
+#mail {
+  padding: 10px 0 10px 20px;
+  margin-bottom: 15px;
+}
+
+#message {
+  margin-top: 5px;
+  padding: 20px 0 150px 20px;
+}
+
+.Send {
+  padding: 13px;
+  text-decoration: none;
+  border: var(--form-primary-color) solid 3px;
+  color: var(--form-primary-color);
+  font-size: 1.5rem;
+  transition: all 0.5s;
+}
+
+.Send:hover {
+  background-color: var(--form-primary-color);
+  color: black;
+}
+
+/* ---------------media qurie---------------------- */
+/* ---------------media qurie---------------------- */
+/* ---------------media qurie---------------------- */
+/* ---------------media qurie---------------------- */
+@media only screen and (min-width:1210px){
+
+}
+@media only screen and (max-width:1210px) {
+  .web-serv {
+    display: none;
+  }
+  li.logo {
+align-self: center;  }
+
+  .photos>div>div p {
+    font-size: 1.5rem;
+  }
+
+  .banner-text {
+    top: 50%;
+  }
+
+  nav {
+    align-content: center;
+  }
+
+
+  svg {
+    display: none;
+  }
+
+  .about {
+    padding-top: 50px;
+  }
+
+  .photos {
+    width: 95%;
+  }
+  .contact-us-section form input {
+    font-size: 1.5rem;
+    width: 100%;
+  
+  }
+  .contact-us-section {
+    padding: 20px;
+    padding-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width:1055px) {
+  .photos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .logo-text {
+    position: absolute;
+    top: 20%;
+    left: 20px;
+    font-size: 2rem;
+    color: #eee;
+    border-bottom: #eee solid 3px;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 5px black;
+  }
+
+  .web-dis-text {
+    position: absolute;
+    top: 51.5%;
+    margin-left: 20px;
+    font-size: 2rem;
+    color: #eee;
+    border-bottom: #eee solid 3px;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 5px black;
+  }
+
+  .web-div-text {
+    position: absolute;
+    top: 82%;
+    margin-left: 20px;
+    font-size: 2rem;
+    color: #eee;
+    border-bottom: #eee solid 3px;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 5px black;
+  }
+  .contact-us-section form input {
+    font-size: 1.5rem;
+    width: 100%;
+  
+  }
+  .contact-us-section {
+    padding: 20px;
+    padding-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .photos {
+    width: 100%;
+  }
+  nav ul li a{
+    display: none ;
+  }
+  nav {
+    height: 70px;
+  }
+  .contact-us-section form input {
+    font-size: 1.5rem;
+    width: 100%;
+  
+  }
+  .contact-us-section {
+    padding: 20px;
+    padding-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width:640px) {
+  .sections {
+    width: 90%;
+  }
+  .about{
+    width: 90%;
+  }
+  .contact-us-section form input {
+    font-size: 1.5rem;
+    width: 100%;
+  
+  }
+  .contact-us-section {
+    padding: 20px;
+    padding-bottom: 50px;
+  }
+}
